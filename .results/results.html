@@ -1,0 +1,956 @@
+<html lang="en"><head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>ccbp test reporter</title>
+            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+	        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/522ee478c4.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+            <script src="js/view.js"></script>
+        </head><body><div id="test-results">{
+  &quot;numFailedTestSuites&quot;: 4,
+  &quot;numFailedTests&quot;: 40,
+  &quot;numPassedTestSuites&quot;: 0,
+  &quot;numPassedTests&quot;: 0,
+  &quot;numPendingTestSuites&quot;: 0,
+  &quot;numPendingTests&quot;: 0,
+  &quot;numRuntimeErrorTestSuites&quot;: 4,
+  &quot;numTodoTests&quot;: 0,
+  &quot;numTotalTestSuites&quot;: 4,
+  &quot;numTotalTests&quot;: 40,
+  &quot;openHandles&quot;: [],
+  &quot;snapshot&quot;: {
+    &quot;added&quot;: 0,
+    &quot;didUpdate&quot;: false,
+    &quot;failure&quot;: false,
+    &quot;filesAdded&quot;: 0,
+    &quot;filesRemoved&quot;: 0,
+    &quot;filesRemovedList&quot;: [],
+    &quot;filesUnmatched&quot;: 0,
+    &quot;filesUpdated&quot;: 0,
+    &quot;matched&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;unchecked&quot;: 0,
+    &quot;uncheckedKeysByFile&quot;: [],
+    &quot;unmatched&quot;: 0,
+    &quot;updated&quot;: 0
+  },
+  &quot;startTime&quot;: 1717827366644,
+  &quot;success&quot;: false,
+  &quot;testResults&quot;: [
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/App.js&#x27;\n\n       5 | import {rest} from &#x27;msw&#x27;\n       6 |\n    &gt;  7 | import App from &#x27;../App&#x27;\n         | ^\n       8 |\n       9 | const getPopularMoviesURL = &#x27;https://api.themoviedb.org/3/movie/popular&#x27;\n      10 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/__tests__/App.js:7:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 17,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: {
+        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
+        &quot;hint&quot;: &quot;&quot;,
+        &quot;requireStack&quot;: [
+          &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/App.js&quot;
+        ],
+        &quot;siblingWithSimilarExtensionFound&quot;: false,
+        &quot;moduleName&quot;: &quot;../App&quot;,
+        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/App.js&#x27;&quot;
+      },
+      &quot;testFilePath&quot;: &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/App.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the Page is opened, an HTTP GET request should be made to the given \&quot;getPopularMoviesURL\&quot; to get the list of all popular movies &quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the Page is opened, an HTTP GET request should be made to the given \&quot;getPopularMoviesURL\&quot; to get the list of all popular movies &quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_1&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;movieDB\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;movieDB\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_2&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Popular\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Popular\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_3&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Top Rated\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Top Rated\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_4&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Upcoming\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;Upcoming\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_5&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML search input element&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML search input element&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_6&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;Search\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;Search\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_7&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_8&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_9&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_10&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_11&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_12&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_13&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_14&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_15&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_16&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Home Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Home Route tests When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Popular\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_17&quot;
+        }
+      ]
+    },
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/TopRated.js&#x27;\n\n       5 | import {rest} from &#x27;msw&#x27;\n       6 |\n    &gt;  7 | import App from &#x27;../App&#x27;\n         | ^\n       8 |\n       9 | const topRatedMoviesURL = &#x27;https://api.themoviedb.org/3/movie/top_rated&#x27;\n      10 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/__tests__/TopRated.js:7:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 11,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: {
+        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
+        &quot;hint&quot;: &quot;&quot;,
+        &quot;requireStack&quot;: [
+          &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/TopRated.js&quot;
+        ],
+        &quot;siblingWithSimilarExtensionFound&quot;: false,
+        &quot;moduleName&quot;: &quot;../App&quot;,
+        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/TopRated.js&#x27;&quot;
+      },
+      &quot;testFilePath&quot;: &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/TopRated.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the Page is opened, an HTTP GET request should be made to the given \&quot;topRatedMoviesURL\&quot; to get the list of all top rated movies&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the Page is opened, an HTTP GET request should be made to the given \&quot;topRatedMoviesURL\&quot; to get the list of all top rated movies&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_19&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_20&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_21&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_22&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_23&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_24&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_25&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_26&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_27&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_28&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Top Rated Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Top Rated Route tests When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Top Rated\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_29&quot;
+        }
+      ]
+    },
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/Upcoming.js&#x27;\n\n       5 | import {rest} from &#x27;msw&#x27;\n       6 |\n    &gt;  7 | import App from &#x27;../App&#x27;\n         | ^\n       8 |\n       9 | const upcomingMoviesURL = &#x27;https://api.themoviedb.org/3/movie/upcoming&#x27;\n      10 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/__tests__/Upcoming.js:7:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 11,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: {
+        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
+        &quot;hint&quot;: &quot;&quot;,
+        &quot;requireStack&quot;: [
+          &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/Upcoming.js&quot;
+        ],
+        &quot;siblingWithSimilarExtensionFound&quot;: false,
+        &quot;moduleName&quot;: &quot;../App&quot;,
+        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/Upcoming.js&#x27;&quot;
+      },
+      &quot;testFilePath&quot;: &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/Upcoming.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the Page is opened, an HTTP GET request should be made to the given \&quot;upcomingMoviesURL\&quot; to get the list of all upcoming movies&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the Page is opened, an HTTP GET request should be made to the given \&quot;upcomingMoviesURL\&quot; to get the list of all upcoming movies&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_30&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;poster_path\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_31&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML element with text content as \&quot;title\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_32&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML element with text content as value of the key \&quot;vote_average\&quot; received from the response within \&quot;results\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_33&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;View Details\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_34&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;Prev\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_35&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML button element with text content as \&quot;Next\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_36&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;1\&quot; representing the page number&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_37&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Next button is clicked, an HTTP GET request should be made with the next page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_38&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Prev button is clicked when the page number is \&quot;1\&quot;, an HTTP GET request should not be made&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_39&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Upcoming Route tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Upcoming Route tests When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active page is \&quot;Upcoming\&quot;, and the Prev button is clicked after clicking the Next button, an HTTP GET request should be made with the previous page number as the value to query parameter \&quot;page\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_40&quot;
+        }
+      ]
+    },
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/Search.js&#x27;\n\n       5 | import {rest} from &#x27;msw&#x27;\n       6 |\n    &gt;  7 | import App from &#x27;../App&#x27;\n         | ^\n       8 |\n       9 | const searchMoviesURL = &#x27;https://api.themoviedb.org/3/search/movie&#x27;\n      10 |\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/__tests__/Search.js:7:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 1,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: {
+        &quot;code&quot;: &quot;MODULE_NOT_FOUND&quot;,
+        &quot;hint&quot;: &quot;&quot;,
+        &quot;requireStack&quot;: [
+          &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/Search.js&quot;
+        ],
+        &quot;siblingWithSimilarExtensionFound&quot;: false,
+        &quot;moduleName&quot;: &quot;../App&quot;,
+        &quot;_originalMessage&quot;: &quot;Cannot find module &#x27;../App&#x27; from &#x27;src/__tests__/Search.js&#x27;&quot;
+      },
+      &quot;testFilePath&quot;: &quot;/tmp/449ba751-43d9-4db9-bd48-c97d19f8ede2/src/__tests__/Search.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Search Movies Test&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;Search Movies Test When the HTTP GET request is successful and an input is given in Search bar and \&quot;Search\&quot; button is clicked, the page should display the movies fetched from the Search API&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and an input is given in Search bar and \&quot;Search\&quot; button is clicked, the page should display the movies fetched from the Search API&quot;,
+          &quot;id&quot;: &quot;RJSCPPPIOZ_TEST_18&quot;
+        }
+      ]
+    }
+  ],
+  &quot;wasInterrupted&quot;: false
+}</div></body></html>
